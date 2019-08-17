@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Umbrella</string>
+    <string name="btn_txt_save">Save</string>
+    <string name="rb_txt_kelvin">Kelvin</string>
+    <string name="rb_txt_fahrenheit">Fahrenheit</string>
+    <string name="rb_txt_celsius">Celsius</string>
+    <string name="tv_txt_select_unit_of_measurement">Select Unit Of Measurement</string>
+    <string name="et_hint_enter_your_zip_code">Enter Your Zip Code</string>
+    <string name="tv_txt_zip_code">Zip Code</string>
+</resources>

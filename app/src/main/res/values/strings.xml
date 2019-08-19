@@ -7,4 +7,16 @@
     <string name="tv_txt_select_unit_of_measurement">Select Unit Of Measurement</string>
     <string name="et_hint_enter_your_zip_code">Enter Your Zip Code</string>
     <string name="tv_txt_zip_code">Zip Code</string>
+    <string name="zip_code_prompt">Enter 5 digit zip code:</string>
+    <string name="temperature_type">Celsius or Fahrenheit</string>
+    <string name="celsius">Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="forecast">placeholder</string>
+    <string name="submit">Submit</string>
+    <string name="tv_landing_tag">Get the most current weather Update</string>
+    <string name="start_btn">Get Started</string>
+    <string-array name="unit_spinner">
+        <item>Fahrenheit</item>
+        <item>Celsius</item>
+    </string-array>
 </resources>

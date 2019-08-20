@@ -110,12 +110,36 @@ public class MainActivity extends AppCompatActivity {
             ivItemIcon1.setImageResource(R.drawable.ten_night);
         } else if (icon.equals("03d")) {
             ivItemIcon1.setImageResource(R.drawable.three_day);
+        } else if (icon.equals("03n")) {
+            ivItemIcon1.setImageResource(R.drawable.three_day);
         } else if (icon.equals("01d")) {
             ivItemIcon1.setImageResource(R.drawable.one_day);
+        } else if (icon.equals("01n")) {
+            ivItemIcon1.setImageResource(R.drawable.one_night);
         } else if (icon.equals("02d")){
             ivItemIcon1.setImageResource(R.drawable.two_day);
-        } else if (icon.equals("04")){
+        } else if (icon.equals("02n")){
+            ivItemIcon1.setImageResource(R.drawable.two_night);
+        } else if (icon.equals("04d")){
             ivItemIcon1.setImageResource(R.drawable.four_day);
+        } else if (icon.equals("04n")){
+            ivItemIcon1.setImageResource(R.drawable.four_day);
+        } else if (icon.equals("09d")){
+            ivItemIcon1.setImageResource(R.drawable.nine_day);
+        } else if (icon.equals("09n")){
+            ivItemIcon1.setImageResource(R.drawable.nine_day);
+        } else if (icon.equals("11d")){
+            ivItemIcon1.setImageResource(R.drawable.eleven_day);
+        } else if (icon.equals("11n")){
+            ivItemIcon1.setImageResource(R.drawable.eleven_day);
+        } else if (icon.equals("13d")){
+            ivItemIcon1.setImageResource(R.drawable.thirteen_day);
+        } else if (icon.equals("13n")){
+            ivItemIcon1.setImageResource(R.drawable.thirteen_day);
+        } else if (icon.equals("50d")){
+            ivItemIcon1.setImageResource(R.drawable.fifty_day);
+        } else if (icon.equals("50n")){
+            ivItemIcon1.setImageResource(R.drawable.fifty_day);
         }
     }
 
@@ -126,12 +150,36 @@ public class MainActivity extends AppCompatActivity {
             ivItemIcon2.setImageResource(R.drawable.ten_night);
         } else if (icon.equals("03d")) {
             ivItemIcon2.setImageResource(R.drawable.three_day);
+        } else if (icon.equals("03n")) {
+            ivItemIcon2.setImageResource(R.drawable.three_day);
         } else if (icon.equals("01d")) {
             ivItemIcon2.setImageResource(R.drawable.one_day);
+        } else if (icon.equals("01n")) {
+            ivItemIcon2.setImageResource(R.drawable.one_night);
         } else if (icon.equals("02d")){
             ivItemIcon2.setImageResource(R.drawable.two_day);
-        } else if (icon.equals("04")){
+        } else if (icon.equals("02n")){
+            ivItemIcon2.setImageResource(R.drawable.two_night);
+        } else if (icon.equals("04d")){
             ivItemIcon2.setImageResource(R.drawable.four_day);
+        } else if (icon.equals("04n")){
+            ivItemIcon2.setImageResource(R.drawable.four_day);
+        } else if (icon.equals("09d")){
+            ivItemIcon2.setImageResource(R.drawable.nine_day);
+        } else if (icon.equals("09n")){
+            ivItemIcon2.setImageResource(R.drawable.nine_day);
+        } else if (icon.equals("11d")){
+            ivItemIcon2.setImageResource(R.drawable.eleven_day);
+        } else if (icon.equals("11n")){
+            ivItemIcon2.setImageResource(R.drawable.eleven_day);
+        } else if (icon.equals("13d")){
+            ivItemIcon2.setImageResource(R.drawable.thirteen_day);
+        } else if (icon.equals("13n")){
+            ivItemIcon2.setImageResource(R.drawable.thirteen_day);
+        } else if (icon.equals("50d")){
+            ivItemIcon2.setImageResource(R.drawable.fifty_day);
+        } else if (icon.equals("50n")){
+            ivItemIcon2.setImageResource(R.drawable.fifty_day);
         }
     }
 
@@ -142,12 +190,36 @@ public class MainActivity extends AppCompatActivity {
             ivItemIcon3.setImageResource(R.drawable.ten_night);
         } else if (icon.equals("03d")) {
             ivItemIcon3.setImageResource(R.drawable.three_day);
+        } else if (icon.equals("03n")) {
+            ivItemIcon3.setImageResource(R.drawable.three_day);
         } else if (icon.equals("01d")) {
             ivItemIcon3.setImageResource(R.drawable.one_day);
+        } else if (icon.equals("01n")) {
+            ivItemIcon3.setImageResource(R.drawable.one_night);
         } else if (icon.equals("02d")){
             ivItemIcon3.setImageResource(R.drawable.two_day);
-        } else if (icon.equals("04")){
+        } else if (icon.equals("02n")){
+            ivItemIcon3.setImageResource(R.drawable.two_night);
+        } else if (icon.equals("04d")){
             ivItemIcon3.setImageResource(R.drawable.four_day);
+        } else if (icon.equals("04n")){
+            ivItemIcon3.setImageResource(R.drawable.four_day);
+        } else if (icon.equals("09d")){
+            ivItemIcon3.setImageResource(R.drawable.nine_day);
+        } else if (icon.equals("09n")){
+            ivItemIcon3.setImageResource(R.drawable.nine_day);
+        } else if (icon.equals("11d")){
+            ivItemIcon3.setImageResource(R.drawable.eleven_day);
+        } else if (icon.equals("11n")){
+            ivItemIcon3.setImageResource(R.drawable.eleven_day);
+        } else if (icon.equals("13d")){
+            ivItemIcon3.setImageResource(R.drawable.thirteen_day);
+        } else if (icon.equals("13n")){
+            ivItemIcon3.setImageResource(R.drawable.thirteen_day);
+        } else if (icon.equals("50d")){
+            ivItemIcon3.setImageResource(R.drawable.fifty_day);
+        } else if (icon.equals("50n")){
+            ivItemIcon3.setImageResource(R.drawable.fifty_day);
         }
     }
 
@@ -158,12 +230,36 @@ public class MainActivity extends AppCompatActivity {
             ivItemIcon4.setImageResource(R.drawable.ten_night);
         } else if (icon.equals("03d")) {
             ivItemIcon4.setImageResource(R.drawable.three_day);
+        } else if (icon.equals("03n")) {
+            ivItemIcon4.setImageResource(R.drawable.three_day);
         } else if (icon.equals("01d")) {
             ivItemIcon4.setImageResource(R.drawable.one_day);
+        } else if (icon.equals("01n")) {
+            ivItemIcon4.setImageResource(R.drawable.one_night);
         } else if (icon.equals("02d")){
             ivItemIcon4.setImageResource(R.drawable.two_day);
-        } else if (icon.equals("04")){
+        } else if (icon.equals("02n")){
+            ivItemIcon4.setImageResource(R.drawable.two_night);
+        } else if (icon.equals("04d")){
             ivItemIcon4.setImageResource(R.drawable.four_day);
+        } else if (icon.equals("04n")){
+            ivItemIcon4.setImageResource(R.drawable.four_day);
+        } else if (icon.equals("09d")){
+            ivItemIcon4.setImageResource(R.drawable.nine_day);
+        } else if (icon.equals("09n")){
+            ivItemIcon4.setImageResource(R.drawable.nine_day);
+        } else if (icon.equals("11d")){
+            ivItemIcon4.setImageResource(R.drawable.eleven_day);
+        } else if (icon.equals("11n")){
+            ivItemIcon4.setImageResource(R.drawable.eleven_day);
+        } else if (icon.equals("13d")){
+            ivItemIcon4.setImageResource(R.drawable.thirteen_day);
+        } else if (icon.equals("13n")){
+            ivItemIcon4.setImageResource(R.drawable.thirteen_day);
+        } else if (icon.equals("50d")){
+            ivItemIcon4.setImageResource(R.drawable.fifty_day);
+        } else if (icon.equals("50n")){
+            ivItemIcon4.setImageResource(R.drawable.fifty_day);
         }
     }
 

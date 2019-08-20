@@ -61,14 +61,116 @@
             tools:ignore="ContentDescription" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="#D8E0F0" />
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvItemTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="4:00PM" />
+
+        <TextView
+            android:id="@+id/tvItemTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvItemTime1"
+            android:paddingLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="4:00PM" />
+
+        <TextView
+            android:id="@+id/tvItemTime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@id/tvItemTime4"
+            android:paddingRight="10dp"
+            android:text="4:00PM" />
+
+        <TextView
+            android:id="@+id/tvItemTime4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:text="4:00PM" />
+
+        <ImageView
+        android:id="@+id/ivItemIcon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvItemTime1"
+        android:src="@drawable/ten_night"/>
+
+        <ImageView
+            android:id="@+id/ivItemIcon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvItemTime2"
+            android:layout_toRightOf="@id/ivItemIcon1"
+            android:src="@drawable/ten_night" />
+
+        <ImageView
+            android:id="@+id/ivItemIcon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvItemTime3"
+            android:layout_toRightOf="@id/ivItemIcon2"
+            android:src="@drawable/ten_night" />
+
+        <ImageView
+            android:id="@+id/ivItemIcon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvItemTime4"
+            android:layout_toRightOf="@id/ivItemIcon3"
+            android:src="@drawable/ten_night" />
+
+        <TextView
+            android:id="@+id/tvItemTemp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivItemIcon1"
+            android:layout_marginLeft="35dp"
+            android:text="100" />
+
+        <TextView
+            android:id="@+id/tvItemTemp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivItemIcon1"
+            android:layout_toRightOf="@id/tvItemTime1"
+            android:paddingLeft="65dp"
+            android:text="100"/>
+
+        <TextView
+            android:id="@+id/tvItemTemp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivItemIcon1"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/tvItemTime4"
+            android:paddingRight="40dp"
+            android:text="100" />
+
+        <TextView
+            android:id="@+id/tvItemTemp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivItemIcon1"
+            android:layout_toRightOf="@id/tvItemTime3"
+            android:layout_marginLeft="10dp"
+            android:text="100"/>
+
+    </RelativeLayout>
 
 </LinearLayout>

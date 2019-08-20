@@ -39,4 +39,6 @@ public class Weather {
         this.icon = icon;
     }
 
+
+
 }

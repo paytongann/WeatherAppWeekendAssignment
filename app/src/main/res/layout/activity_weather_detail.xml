@@ -59,20 +59,29 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
+        <TextView
+            android:id="@+id/tv_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:textSize="30sp"/>
         <TextView
             android:id="@+id/tvItemTime1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="60dp"
             android:text="4:00PM" />
 
         <TextView
@@ -81,14 +90,14 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/tvItemTime1"
             android:paddingLeft="50dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="60dp"
             android:text="4:00PM" />
 
         <TextView
             android:id="@+id/tvItemTime3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="60dp"
             android:layout_marginRight="40dp"
             android:layout_toLeftOf="@id/tvItemTime4"
             android:paddingRight="10dp"
@@ -99,7 +108,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingRight="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="60dp"
             android:layout_alignParentRight="true"
             android:text="4:00PM" />
 

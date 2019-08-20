@@ -2,21 +2,24 @@ package com.example.weatherappweekendassignment.presenter;
 
 import android.content.Context;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.example.weatherappweekendassignment.model.ApiInterface;
-import com.example.weatherappweekendassignment.model.Weather;
+import com.example.weatherappweekendassignment.model.CityStatePojo;
+import com.example.weatherappweekendassignment.model.ParentCityStatePojo;
 import com.example.weatherappweekendassignment.model.WeatherDataList;
 import com.example.weatherappweekendassignment.model.ListPojo;
 import com.example.weatherappweekendassignment.view.MainActivity;
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
-import java.util.ArrayList;
+
 import java.util.List;
 import io.reactivex.Observable;
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -27,13 +30,33 @@ public class Presenter implements PresenterContract{
     private Context context;
     private Retrofit retrofit;
     private ApiInterface apiInterface;
-
+    private String state = "";
     public Presenter(Context context) {
         this.context = context;
     }
 
     @Override
     public void initRetrofit(String zipCode, String unit) {
+        retrofit = new Retrofit.Builder()
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create())
+                .baseUrl("https://us-zipcode.api.smartystreets.com/")
+                .build();
+        apiInterface = retrofit.create(ApiInterface.class);
+        apiInterface.getZipcode("dc661aab-8408-a6ff-4fa4-fb19898ec4c5", "jYhGFhrSzMvudzS0g1o3", zipCode).enqueue(new Callback<List<ParentCityStatePojo>>() {
+            @Override
+            public void onResponse(Call<List<ParentCityStatePojo>> call, Response<List<ParentCityStatePojo>> response) {
+                if (response.isSuccessful()){
+                    state = response.body().get(0).cityStates.get(0).stateAbbreviation;
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<ParentCityStatePojo>> call, Throwable t) {
+                Log.d(TAG, "fail" + t.getMessage());
+            }
+        });
+
         final String  appId = "b6295034215bfc7aebcd2e661b356203";
         retrofit = new Retrofit.Builder()
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
@@ -57,7 +80,7 @@ public class Presenter implements PresenterContract{
                         int tempInt= (int)Math.round(dataSet.get(0).getWeatherMain().getTemp());
                         String temperature = tempInt + "°";
                         String status = dataSet.get(0).getWeather().get(0).getMain();
-                        ((MainActivity) context).editCurrentWeather(city, temperature, status);
+                        ((MainActivity) context).editCurrentWeather(city+", " + state, temperature, status);
                         String itemTime1 =dataSet.get(0).getDtTxt().split(" ")[1];
                         itemTime1 = timeConverter(itemTime1);
                         String itemTime2 =dataSet.get(1).getDtTxt().split(" ")[1];
@@ -93,6 +116,7 @@ public class Presenter implements PresenterContract{
                     }
                 });
     }
+
     public String timeConverter(String time){
         if (time.equals("01:00:00")){
             time = "1:00 AM";
